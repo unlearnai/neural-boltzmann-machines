@@ -1,0 +1,16 @@
+name:  nbm
+
+channels:
+  - pytorch
+  - conda-forge
+
+dependencies:
+  - pip
+  - python >= 3.9, <3.11
+
+  - pytorch >= 1.12.0
+  - torchvision
+  - matplotlib-base
+
+  - pip:
+    - lightning < 2.0.0

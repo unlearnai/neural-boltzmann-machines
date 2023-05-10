@@ -1,0 +1,5 @@
+pip
+pytorch>=1.12.0
+torchvision
+matplotlib-base
+lightning < 2.0.0
