@@ -4,7 +4,7 @@ This is the official implementation of Neural Boltzmann Machines (NBMs).
 
 ![mnist.png](.figures/mnist.png)
 
-In this paper we present Neural Boltzmann Machines (NBMs) which are a new extension of 
+In this [paper](https://arxiv.org/abs/2305.08337) we present Neural Boltzmann Machines (NBMs) which are a new extension of 
 Conditional Restricted Boltzmann Machines (CRBMs)
 that allow CRBMs to take full advantage of the push to deeper and deeper networks. We accomplish
 this by allowing all parameters of a CRBM to be their own neural network that is a function of the
