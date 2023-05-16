@@ -255,12 +255,6 @@ class NBM(nn.Module):
         return y
 
     @torch.no_grad()
-    def _sample_vis_ising(self, h, bias, precision, weights):
-        field = hidden_times_weights(h, weights)
-        logits = precision * bias + field
-        proba = torch.sigmoid(2.0 * logits)
-        return 2.0 * torch.bernoulli(proba) - 1.0
-
     def _sample_vis_ising(self, h, bias, precision, weights, denoise=False):
         field = hidden_times_weights(h, weights)
         logits = precision * bias + field
